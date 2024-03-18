@@ -18,7 +18,7 @@
 </head>
 <body>
     <header>
-        <nav class="navbar navbar-expand-md bg-dark" data-bs-theme="dark">
+        <nav class="navbar navbar-expand-md bg-dark d-md-none" data-bs-theme="dark">
           <!-- Container -->
           <div class="container">
             <!-- brand -->
@@ -101,9 +101,36 @@
                   <i class="bi bi-person-heart"></i> Clienti
                 </a>
               </li>
+              <li class="d-md-none">
+                <a href="#" class="nav-link text-secondary">
+                  <svg class="bi pe-none me-2" width="16" height="16">
+                    <use xlink:href="#people-circle"></use>
+                  </svg>
+                   Nuovo Progetto
+                </a>
+              </li>
+
+              <li class="d-md-none">
+                  <a href="#" class="nav-link text-secondary">
+                      <svg class="bi pe-none me-2" width="16" height="16">
+                      <use xlink:href="#people-circle"></use>
+                      </svg>
+                      Profilo
+                  </a>
+              </li>
+                  
+              <li class="d-md-none">
+                <a href="#" class="nav-link text-secondary">
+                  <svg class="bi pe-none me-2" width="16" height="16">
+                  <use xlink:href="#people-circle"></use>
+                  </svg>
+                  Esci
+                </a>
+              </li>
+
             </ul>
             <hr />
-            <div class="dropdown">
+            <div class="dropdown d-none d-md-block">
               <a
                 href="#"
                 class="d-flex align-items-center text-white text-decoration-none dropdown-toggle"
@@ -140,8 +167,10 @@
                         
                         <div class="btn-group fs-6" role="group">
                             <button class="btn btn-outline-secondary">Esporta</button>
-                            <button class="btn btn-outline-secondary">Aggiungi</button>
+                            <!-- Uso anchorage tag e gli do il ruolo di bottone, così che funge visivamente da btn ma semanticamente da link-->
+                            <a href="new_prod.html" class="btn btn-outline-secondary" role="button">Aggiungi</a>
                         </div>
+
                     </div>
                     <!-- Tabella prodotti -->
                     <table class="table">
@@ -157,12 +186,15 @@
                         </thead>
                         <!--/Head Tab-->
 
+                        <!-- Body Table -->
                         <tbody>
                             <tr class="align-middle">
                                 <!--Nome-->
                                 <td class="d-flex align-items-center">
-                                    <div class="ms_box" style="height: 40px; width: 40px; background-color: aqua;"></div>
-                                    <div class="d-flex flex-column p-1">
+                                    <div class="ms_box">
+                                        <img src="https://fastly.picsum.photos/id/474/40/40.jpg?hmac=hwRRnooeLO9JGdfF4xwbRaA3Y6QXS2aDlYzz5ha02A8" alt="">
+                                    </div>
+                                    <div class="d-flex flex-column p-2">
                                         <span class="d-inline-block">Smartphone Samsung Galaxy S21</span>
                                         <span class="d-none d-xl-block text-secondary">Display AMOLED,Fotocamera Ultra Wide, Batteria a lunga durata</span>
                                     </div>
@@ -194,7 +226,9 @@
                             <tr class="align-middle">
                                 <!--Nome-->
                                 <td class="d-flex align-items-center">
-                                    <div class="ms_box" style="height: 40px; width: 40px; background-color: aqua;"></div>
+                                    <div class="ms_box">
+                                        <img src="https://fastly.picsum.photos/id/474/40/40.jpg?hmac=hwRRnooeLO9JGdfF4xwbRaA3Y6QXS2aDlYzz5ha02A8" alt="">
+                                    </div>
                                     <div class="d-flex flex-column p-1">
                                         <span class="d-inline-block">Apple Macbook Pro 13''</span>
                                         <span class="d-none d-xl-block text-secondary">Processore M1, SSD ultraveloce, Display Retina</span>
@@ -227,7 +261,9 @@
                             <tr class="align-middle">
                                 <!--Nome-->
                                 <td class="d-flex align-items-center">
-                                    <div class="ms_box" style="height: 40px; width: 40px; background-color: aqua;"></div>
+                                    <div class="ms_box">
+                                        <img src="https://fastly.picsum.photos/id/474/40/40.jpg?hmac=hwRRnooeLO9JGdfF4xwbRaA3Y6QXS2aDlYzz5ha02A8" alt="">
+                                    </div>
                                     <div class="d-flex flex-column p-1">
                                         <span class="d-inline-block">Smartwatch Apple Watch Series 6</span>
                                         <span class="d-none d-xl-block text-secondary">Monitoraggio attività, Misurazione ossigeno nel sangue, Display Always-On</span>
@@ -260,7 +296,9 @@
                             <tr class="align-middle">
                                 <!--Nome-->
                                 <td class="d-flex align-items-center">
-                                    <div class="ms_box" style="height: 40px; width: 40px; background-color: aqua;"></div>
+                                    <div class="ms_box">
+                                        <img src="https://fastly.picsum.photos/id/474/40/40.jpg?hmac=hwRRnooeLO9JGdfF4xwbRaA3Y6QXS2aDlYzz5ha02A8" alt="">
+                                    </div>
                                     <div class="d-flex flex-column p-1">
                                         <span class="d-inline-block">Auricolari Wireless Apple Airpods Pro</span>
                                         <span class="d-none d-xl-block text-secondary">Cancellazione attiva del rumore, Resistenza all'acqua e al sudore</span>
@@ -293,7 +331,9 @@
                             <tr class="align-middle">
                                 <!--Nome-->
                                 <td class="d-flex align-items-center">
-                                    <div class="ms_box" style="height: 40px; width: 40px; background-color: aqua;"></div>
+                                    <div class="ms_box">
+                                        <img src="https://fastly.picsum.photos/id/474/40/40.jpg?hmac=hwRRnooeLO9JGdfF4xwbRaA3Y6QXS2aDlYzz5ha02A8" alt="">
+                                    </div>
                                     <div class="d-flex flex-column p-1">
                                         <span class="d-inline-block">Console Sony Playstation 5</span>
                                         <span class="d-none d-xl-block text-secondary">Gaming ad alta definizione, Tempi di caricamento rapidi, Supporto 4k</span>
@@ -326,7 +366,9 @@
                             <tr class="align-middle">
                                 <!--Nome-->
                                 <td class="d-flex align-items-center">
-                                    <div class="ms_box" style="height: 40px; width: 40px; background-color: aqua;"></div>
+                                    <div class="ms_box">
+                                        <img src="https://fastly.picsum.photos/id/474/40/40.jpg?hmac=hwRRnooeLO9JGdfF4xwbRaA3Y6QXS2aDlYzz5ha02A8" alt="">
+                                    </div>
                                     <div class="d-flex flex-column p-1">
                                         <span class="d-inline-block">Monitor Gaming ASUS ROG Strix XG27UQ</span>
                                         <span class="d-none d-xl-block text-secondary">Schermo 4K UHD, Frequenza 144Hz, HDR</span>
@@ -359,7 +401,9 @@
                             <tr class="align-middle">
                                 <!--Nome-->
                                 <td class="d-flex align-items-center">
-                                    <div class="ms_box" style="height: 40px; width: 40px; background-color: aqua;"></div>
+                                    <div class="ms_box">
+                                        <img src="https://fastly.picsum.photos/id/474/40/40.jpg?hmac=hwRRnooeLO9JGdfF4xwbRaA3Y6QXS2aDlYzz5ha02A8" alt="">
+                                    </div>
                                     <div class="d-flex flex-column p-1">
                                         <span class="d-inline-block">Stampante Multifunzione HP LaserJet Pro MFP M28w</span>
                                         <span class="d-none d-xl-block text-secondary">Stampa, Scansione, Copia, Wi-Fi</span>
@@ -392,7 +436,9 @@
                             <tr class="align-middle">
                                 <!--Nome-->
                                 <td class="d-flex align-items-center">
-                                    <div class="ms_box" style="height: 40px; width: 40px; background-color: aqua;"></div>
+                                    <div class="ms_box">
+                                        <img src="https://fastly.picsum.photos/id/474/40/40.jpg?hmac=hwRRnooeLO9JGdfF4xwbRaA3Y6QXS2aDlYzz5ha02A8" alt="">
+                                    </div>
                                     <div class="d-flex flex-column p-1">
                                         <span class="d-inline-block">Router Wi-Fi Mesh TP-Link Deco X20</span>
                                         <span class="d-none d-xl-block text-secondary">Copertura fino a 560mq, Velocità fino a 1800 Mbps, Gestione con app</span>
@@ -425,7 +471,9 @@
                             <tr class="align-middle">
                                 <!--Nome-->
                                 <td class="d-flex align-items-center">
-                                    <div class="ms_box" style="height: 40px; width: 40px; background-color: aqua;"></div>
+                                    <div class="ms_box">
+                                        <img src="https://fastly.picsum.photos/id/474/40/40.jpg?hmac=hwRRnooeLO9JGdfF4xwbRaA3Y6QXS2aDlYzz5ha02A8" alt="">
+                                    </div>
                                     <div class="d-flex flex-column p-1">
                                         <span class="d-inline-block">SSD NVMe Western Digital Black SN850</span>
                                         <span class="d-none d-xl-block text-secondary">Capacità 1TB, Velocità di lettura 7000Mb/s, Tecnologia PCIe Gen4</span>
@@ -458,7 +506,9 @@
                             <tr class="align-middle">
                                 <!--Nome-->
                                 <td class="d-flex align-items-center">
-                                    <div class="ms_box" style="height: 40px; width: 40px; background-color: aqua;"></div>
+                                    <div class="ms_box">
+                                        <img src="https://fastly.picsum.photos/id/474/40/40.jpg?hmac=hwRRnooeLO9JGdfF4xwbRaA3Y6QXS2aDlYzz5ha02A8" alt="">
+                                    </div>
                                     <div class="d-flex flex-column p-1">
                                         <span class="d-inline-block">Mouse Gaming Logitech G502 HERO</span>
                                         <span class="d-none d-xl-block text-secondary">Sensore HERO 25K, 11 pulsanti programmabili, Peso personalizzabile</span>
@@ -488,7 +538,10 @@
                                 <!--/Azioni-->
                             </tr>
                         </tbody>
+                        <!-- /Body table-->
+
                     </table>
+                    <!-- /Tabella Prodotti-->
                 </div>
             </div>
           </main>

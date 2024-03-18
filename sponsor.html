@@ -18,7 +18,7 @@
 </head>
 <body>
     <header>
-        <nav class="navbar navbar-expand-md bg-dark" data-bs-theme="dark">
+        <nav class="navbar navbar-expand-md bg-dark d-md-none" data-bs-theme="dark">
           <!-- Container -->
           <div class="container">
             <!-- brand -->
@@ -57,7 +57,7 @@
               <svg class="bi pe-none me-2" width="40" height="32">
                 <use xlink:href="#bootstrap"></use>
               </svg>
-              <span class="fs-4">Sidebar</span>
+              
             </a>
             <hr />
             <ul class="nav nav-pills flex-column mb-auto">
@@ -101,9 +101,36 @@
                   <i class="bi bi-person-heart"></i> Clienti
                 </a>
               </li>
+              <li class="d-md-none">
+                <a href="#" class="nav-link text-secondary">
+                  <svg class="bi pe-none me-2" width="16" height="16">
+                    <use xlink:href="#people-circle"></use>
+                  </svg>
+                   Nuovo Progetto
+                </a>
+              </li>
+
+              <li class="d-md-none">
+                  <a href="#" class="nav-link text-secondary">
+                      <svg class="bi pe-none me-2" width="16" height="16">
+                      <use xlink:href="#people-circle"></use>
+                      </svg>
+                      Profilo
+                  </a>
+              </li>
+                  
+              <li class="d-md-none">
+                <a href="#" class="nav-link text-secondary">
+                  <svg class="bi pe-none me-2" width="16" height="16">
+                  <use xlink:href="#people-circle"></use>
+                  </svg>
+                  Esci
+                </a>
+              </li>
+
             </ul>
             <hr />
-            <div class="dropdown">
+            <div class="dropdown d-none d-md-block">
               <a
                 href="#"
                 class="d-flex align-items-center text-white text-decoration-none dropdown-toggle"

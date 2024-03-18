@@ -18,7 +18,7 @@
 </head>
 <body>
     <header>
-        <nav class="navbar navbar-expand-md bg-dark" data-bs-theme="dark">
+        <nav class="navbar navbar-expand-md bg-dark d-md-none" data-bs-theme="dark">
           <!-- Container -->
           <div class="container">
             <!-- brand -->
@@ -57,7 +57,6 @@
               <svg class="bi pe-none me-2" width="40" height="32">
                 <use xlink:href="#bootstrap"></use>
               </svg>
-              <span class="fs-4">Sidebar</span>
             </a>
             <hr />
             <ul class="nav nav-pills flex-column mb-auto">
@@ -101,9 +100,37 @@
                   <i class="bi bi-person-heart"></i> Clienti
                 </a>
               </li>
+
+              <li class="d-md-none">
+                <a href="#" class="nav-link text-secondary">
+                  <svg class="bi pe-none me-2" width="16" height="16">
+                    <use xlink:href="#people-circle"></use>
+                  </svg>
+                   Nuovo Progetto
+                </a>
+              </li>
+
+              <li class="d-md-none">
+                  <a href="#" class="nav-link text-secondary">
+                      <svg class="bi pe-none me-2" width="16" height="16">
+                      <use xlink:href="#people-circle"></use>
+                      </svg>
+                      Profilo
+                  </a>
+              </li>
+                  
+              <li class="d-md-none">
+                <a href="#" class="nav-link text-secondary">
+                  <svg class="bi pe-none me-2" width="16" height="16">
+                  <use xlink:href="#people-circle"></use>
+                  </svg>
+                  Esci
+                </a>
+              </li>
+
             </ul>
             <hr />
-            <div class="dropdown">
+            <div class="dropdown d-none d-md-block">
               <a
                 href="#"
                 class="d-flex align-items-center text-white text-decoration-none dropdown-toggle"
@@ -127,11 +154,30 @@
                 <li><a class="dropdown-item" href="#">Sign out</a></li>
               </ul>
             </div>
+            
           </div>
   
           <!-- Main -->
           <main class="col-md-8 col-lg-9">
-            Contenuto
+            <div class="container">
+              <div class="row">
+                <div class="col-12 mt-3 p-4">
+                  <h1 class="text-center fw-bold">Cosa vuoi fare?</h1>
+                  <p class="text-center fs-4">
+                    Seleziona tra queste opzioni :
+                  </p>
+                  <div class="container d-flex justify-content-center">
+                    <div class="row w-75 align-items-center mt-5">
+                        <a href="sponsor.html" class="btn btn-primary fs-4 mt-4" role="button">Sponsorizzazione</a> 
+                        <a href="products.html" class="btn btn-primary fs-4 mt-4" role="button">Prodotti</a> 
+                        <a href="new_prod.html" class="btn btn-primary fs-4 mt-4" role="button">Aggiungi un prodotto</a>
+                        <a href="#" class="btn btn-primary fs-4 mt-4" role="button">Visiona la lista Clienti</a>
+                    </div>
+                  </div>
+                  
+                </div>
+              </div>
+            </div>
           </main>
           <!-- /Main -->
         </div>

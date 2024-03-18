@@ -18,7 +18,7 @@
 </head>
 <body>
     <header>
-        <nav class="navbar navbar-expand-md bg-dark" data-bs-theme="dark">
+        <nav class="navbar navbar-expand-md bg-dark d-md-none" data-bs-theme="dark">
           <!-- Container -->
           <div class="container">
             <!-- brand -->
@@ -57,7 +57,6 @@
               <svg class="bi pe-none me-2" width="40" height="32">
                 <use xlink:href="#bootstrap"></use>
               </svg>
-              <span class="fs-4">Sidebar</span>
             </a>
             <hr />
             <ul class="nav nav-pills flex-column mb-auto">
@@ -101,9 +100,38 @@
                   <i class="bi bi-person-heart"></i> Clienti
                 </a>
               </li>
+
+              <li class="d-md-none">
+                <a href="#" class="nav-link text-secondary">
+                  <svg class="bi pe-none me-2" width="16" height="16">
+                    <use xlink:href="#people-circle"></use>
+                  </svg>
+                   Nuovo Progetto
+                </a>
+              </li>
+
+              <li class="d-md-none">
+                  <a href="#" class="nav-link text-secondary">
+                      <svg class="bi pe-none me-2" width="16" height="16">
+                      <use xlink:href="#people-circle"></use>
+                      </svg>
+                      Profilo
+                  </a>
+              </li>
+                  
+              <li class="d-md-none">
+                <a href="#" class="nav-link text-secondary">
+                  <svg class="bi pe-none me-2" width="16" height="16">
+                  <use xlink:href="#people-circle"></use>
+                  </svg>
+                  Esci
+                </a>
+              </li>
+
+
             </ul>
             <hr />
-            <div class="dropdown">
+            <div class="dropdown d-none d-md-block">
               <a
                 href="#"
                 class="d-flex align-items-center text-white text-decoration-none dropdown-toggle"
@@ -128,11 +156,14 @@
               </ul>
             </div>
           </div>
-  
+          <!-- /Sidebar-->
+
           <!-- Main -->
           <main class="col-md-8 col-lg-9">
+            <!-- Container -->
             <div class="container">
-                <div class="row">
+                <!-- Row-->
+                <div class="row p-2">
                     <div class="text-center">
                         <h1>Crea nuovo prodotto</h1>
                         <p class="fs-4">
@@ -143,9 +174,11 @@
                         </p>
                     </div>
 
-                    <form action="" class="col-12 col-md-8">
+                    <!-- Prima parte del form -->
+                    <form action="" class="col-12 col-lg-6">
                         <div class="d-md-flex flex-md-column p-2">
-                            
+
+                            <!-- Descrizione Prodotto Aggiunto-->
                             <label for="name" class="p-md-2 w-md-25 p-2">Nome</label>
                             <input type="text" id="name" class="w-100">
 
@@ -159,19 +192,100 @@
                                 <option value="2">Apple</option>
                                 <option value="3">Nokia</option>
                               </select>
-                            
+                            <!-- /Descrizione Prodotto -->
 
                             <textarea name="message" id="message" class="w-100" rows="5" placeholder="Inserisci la descrizione del prodotto, massimo 1000 caratteri"></textarea>
                             
+                            <!--Gruppo input per inserimento file-->
+                            <div class="mt-3 mb-3 input-group">
+                              <label for="formFile" class="form-label"></label>
+                              <input class="form-control" type="file" id="formFile">
+                              <label class="input-group-text" for="inputGroupFile01">Immagine</label>
+                            </div>
+                            <!-- /Gruppo input-->
+
+                            <!-- Gruppo di btn disponibilità -->
+                            <div class="btn-group" role="group" aria-label="Bottoni di disponibilità">
+                              <button type="button" class="btn btn-outline-secondary">Disponibile</button>
+                              <button type="button" class="btn btn-outline-secondary">Esaurito</button>
+                              <button type="button" class="btn btn-outline-secondary">Fuori produzione</button>
+                              <button type="button" class="btn btn-outline-secondary">In arrivo</button>
+                            </div>
+                            <!-- /btn-group-->
                         </div>                      
                     </form>
+                     <!-- /Prima parte del form -->
 
-                    <form action="" class="col-12 col-md-4">
+                    <!-- Seconda parte del form -->
+                    <form action="" class="col-12 col-lg-6 pt-3">
+                      <!-- Input group di checkbox-->
+                      <div class="input-group w-100">
 
+                        <div class="input-group-text d-flex w-100 text-wrap">
+                          <input class="form-check-input mt-0 align-self-center" type="checkbox" value="" aria-label="Checkbox for following text input">
+                          <div class="d-flex flex-column text-start p-2">
+                            <span class="fw-bolder">Fotocamera principale</span>
+                            <span>foto di alta qualità per registrare video nitidi</span>
+                          </div>                          
+                        </div>
+
+                        <div class="input-group-text d-flex w-100 text-wrap">
+                          <input class="form-check-input mt-0 align-self-center" type="checkbox" value="" aria-label="Checkbox for following text input">
+                          <div class="d-flex flex-column text-start p-2">
+                            <span class="fw-bolder">schermo OLED</span>
+                            <span>offre colori vividi per un'esperienza visiva straordinaria</span>
+                          </div>                          
+                        </div>
+
+                        <div class="input-group-text d-flex w-100 text-wrap">
+                          <input class="form-check-input mt-0 align-self-center" type="checkbox" value="" aria-label="Checkbox for following text input">
+                          <div class="d-flex flex-column text-start p-2">
+                            <span class="fw-bolder">processore Octa-core</span>
+                            <span>prestazioni fluide e veloci per eseguire le applicazioni più esigenti</span>
+                          </div>                          
+                        </div>
+
+                        <div class="input-group-text d-flex w-100 text-wrap">
+                          <input class="form-check-input mt-0 align-self-center" type="checkbox" value="" aria-label="Checkbox for following text input">
+                          <div class="d-flex flex-column text-start p-2">
+                            <span class="fw-bolder">ricarica wireless</span>
+                            <span>consente di ricaricare lo smartphone comodamente senza l'uso di cavi</span>
+                          </div>                          
+                        </div>
+
+                        <div class="input-group-text d-flex w-100 text-wrap">
+                          <input class="form-check-input mt-0 align-self-center" type="checkbox" value="" aria-label="Checkbox for following text input">
+                          <div class="d-flex flex-column text-start p-2">
+                            <span class="fw-bolder">connessione 5G</span>
+                            <span>navigazione ultra veloce e streaming senza interruzioni</span>
+                          </div>                          
+                        </div>
+
+                        <div class="input-group-text d-flex w-100 text-wrap">
+                          <input class="form-check-input mt-0 align-self-center" type="checkbox" value="" aria-label="Checkbox for following text input">
+                          <div class="d-flex flex-column text-start p-2">
+                            <span class="fw-bolder">tecnologia NFC</span>
+                            <span>per effettuare pagamenti senza contatto</span>
+                          </div>                          
+                        </div>
+
+                      </div>
+                      
                     </form>
-
+                    <!-- /Seconda parte form-->
                 </div>
+                <!-- /Row -->
+
+                <div class="p-2">
+                  <button class="btn btn-primary">
+                    Salva
+                  </button>
+                </div>
+                
+
             </div>
+            <!-- /Container-->
+
           </main>
           <!-- /Main -->
         </div>
